@@ -1,4 +1,4 @@
-public class Iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTlefonico{
+public class Iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTelefonico{
     @Override
     public void tocar() {
         System.out.println("Tocando Musica");
