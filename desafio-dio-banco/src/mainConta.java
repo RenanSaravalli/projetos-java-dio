@@ -1,8 +1,17 @@
 public class mainConta {
     public static void main(String[] args) {
-        Conta cc = new ContaCorrente();
-        Conta poupanca = new ContaPoupanca();
+        Cliente renan = new Cliente();
+        renan.setNome("Renan");
 
-        System.out.println();
+        Cliente cleber = new Cliente();
+        cleber.setNome("Cleber");
+
+        Conta cc = new ContaCorrente(renan);
+        cc.depositar(100);
+        Conta poupanca = new ContaPoupanca(cleber);
+
+        cc.transferir(100, poupanca);
+        cc.imprimirExtrato();
+        poupanca.imprimirExtrato();
     }
 }
