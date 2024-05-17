@@ -24,7 +24,6 @@ public class Dev {
             System.err.println("Você não está matriculado em nenhum conteúdo!");
         }
     }
-
     public double calcularXp(){
         return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
     }
